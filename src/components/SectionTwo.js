@@ -72,7 +72,7 @@ const SectionTwo = () => {
 
   return (
     <section className='w-full max-w-screen-2xl px-14 mt-10 mb-10 relative'>
-      <h1 className='font-bold text-2xl'>수강생들이 보고 있는 강좌</h1>
+      <h1 className='font-bold text-2xl mb-4'>수강생들이 보고 있는 강좌</h1>
       <Slider {...settings}>
         {lectureData.map(lecture => <SingleLecture key={lecture.title} lecture={lecture} />)}
       </Slider>
