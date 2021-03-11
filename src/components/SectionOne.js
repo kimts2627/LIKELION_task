@@ -6,9 +6,9 @@ import excel_pic from '../img/excelgirl.jpg';
 
 const SectionOne = () => {
   return (
-    <section className='px-6'>
-      <h1>세계 최대 규모의 강좌 모음</h1>
-      <p>130,000개 이상의 온라인 동영상 강좌 중에서 선택하세요. 매월 새롭게 강좌가 추가됩니다.</p>
+    <section className='w-full max-w-screen-2xl px-14 mt-14'>
+      <h1 className='font-bold text-2xl'>세계 최대 규모의 강좌 모음</h1>
+      <p className='text-gray-500 font-light'>130,000개 이상의 온라인 동영상 강좌 중에서 선택하세요. 매월 새롭게 강좌가 추가됩니다.</p>
       <SelectionTab />
     </section>
   );
@@ -55,13 +55,13 @@ const SelectionTab = () => {
 
   return (
     <div>
-      <nav className='border-b border-gray-300 flex' >
+      <nav className='border-b border-gray-300 flex mt-8' >
         {selectionTabSubjectData.map(item => 
           <div
             className={
               selectedSubject === item.subject ?
-              'border-b-2 border-gray-700 cursor-pointer' :
-              'cursor-pointer'
+              'border-b-2 border-gray-700 cursor-pointer font-medium mr-5 h-10' :
+              'cursor-pointer font-medium mr-5 text-gray-500'
             }
             onClick={(e) => handleSelectedSbj(e.target.textContent)}
           >
@@ -69,10 +69,12 @@ const SelectionTab = () => {
           </div>
         )}
       </nav>
-      <div className='border boredr-red-400 h-80'>
-        <h2>{selectOneSbj(selectedSubject).title}</h2>
-        <p>{selectOneSbj(selectedSubject).description}</p>
-        <h>{`${selectOneSbj(selectedSubject).subject} 탐색하기`}</h>
+      <div className='h-72 my-5 flex flex-row justify-evenly items-center'>
+        <div className='flex flex-col'>
+          <h2 className='font-bold mb-2 text-gray-900'>{selectOneSbj(selectedSubject).title}</h2>
+          <p className='text-gray-700 text-sm mr-5'>{selectOneSbj(selectedSubject).description}</p>
+          <h className='text-blue-600 font-bold mt-5'>{`${selectOneSbj(selectedSubject).subject} 탐색하기`}</h>
+        </div>
         <img className='' src={selectOneSbj(selectedSubject).pic} alt='' />
       </div>
     </div>
