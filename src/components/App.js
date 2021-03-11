@@ -1,7 +1,9 @@
+import Header from './Header';
+
 const App = () => {
   return (
-    <div className="inline-block rounded-full bg-red-200">
-      hello world
+    <div className="h-screen w-screen">
+      <Header />
     </div>
   );
 }
