@@ -3,6 +3,7 @@ import SectionOne from './SectionOne';
 import SectionThree from './SectionThree';
 import SectionTwo from './SectionTwo';
 import SectionFour from './SectionFour';
+import SectionFive from './SectionFive';
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
     </main>
   );
 }
