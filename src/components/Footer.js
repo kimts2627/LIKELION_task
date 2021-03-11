@@ -28,7 +28,21 @@ const Footer = () => {
         <img className='w-3 rotate-90' src={arrow} alt='' />
       </div>
       <p className='text-xs text-gray-500 absolute bottom-14 right-8'>© 2021 Udemy, Inc.</p>
+      {isLanguageModalOn ? <LanguageModal changeLanguage={changeLanguage} /> : null}
     </footer>
+  );
+}
+
+const LanguageModal = ({ changeLanguage }) => {
+
+  return(
+    <aside className='absolute border border-gray-500 w-52 h-60 right-8 -top-56 shadow-lg bg-white rounded-md flex flex-col justify-evenly pl-3 font-light cursor-pointer'>
+      <div onClick={(e) => changeLanguage(e.target.textContent)}>한국어</div>
+      <div onClick={(e) => changeLanguage(e.target.textContent)}>일본어</div>
+      <div onClick={(e) => changeLanguage(e.target.textContent)}>영어</div>
+      <div onClick={(e) => changeLanguage(e.target.textContent)}>중국어</div>
+      <div onClick={(e) => changeLanguage(e.target.textContent)}>독일어</div>
+    </aside>
   );
 }
 
