@@ -11,7 +11,7 @@ const Footer = () => {
   ]);
 
   return (
-    <footer className='absolute bottom-0 border-t border-gray-300 h-80 pl-6 pt-8'>
+    <footer className='border-t border-gray-300 h-80 pl-6 pt-8'>
       <article className='flex flex-wrap'>
         {footerMenu.map(item => <p className=''>{item}</p>)}
       </article>
