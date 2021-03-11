@@ -1,18 +1,7 @@
-import { useState, useEffect, useRef } from "react";
-import YouTube from 'react-youtube';
-
 const SectionFive = () => {
 
-
-  // iframe 사이즈 조절
-  const ref = useRef();
-  const [videoWidth, handleWidth] = useState(0);
-  useEffect(() => {
-    handleWidth(ref.current.clientWidth /2);
-  }, []);
-
   return (
-    <section className='w-full h-auto max-w-screen-2xl px-14 mt-14 flex items-center justify-center' ref={ref}>
+    <section className='w-full h-auto max-w-screen-2xl px-14 mt-14 flex items-center justify-center'>
       <div className='w-1/2 h-60'>
         <iframe
           className='w-full h-full'

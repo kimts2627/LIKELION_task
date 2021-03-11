@@ -53,6 +53,7 @@ const SectionTwo = () => {
 
   const [width, handleWidth] = useState(window.innerWidth);
 
+  // 항상 window.inneWidth의 값을 저장함
   useEffect(() => {
     handleWidth(window.innerWidth);
     window.addEventListener('resize', () => handleWidth(window.innerWidth));
