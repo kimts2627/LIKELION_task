@@ -1,8 +1,12 @@
 import Billboard from './Billboard';
+import SectionOne from './SectionOne';
 
 const Main = () => {
   return (
-    <Billboard />
+    <main>
+      <Billboard />
+      <SectionOne />
+    </main>
   );
 }
 
