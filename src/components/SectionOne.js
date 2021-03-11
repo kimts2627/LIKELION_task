@@ -58,6 +58,7 @@ const SelectionTab = () => {
       <nav className='border-b border-gray-300 flex mt-8' >
         {selectionTabSubjectData.map(item => 
           <div
+            key={item.subject}
             className={
               selectedSubject === item.subject ?
               'border-b-2 border-gray-700 cursor-pointer font-medium mr-5 h-10' :
@@ -73,7 +74,7 @@ const SelectionTab = () => {
         <div className='flex flex-col'>
           <h2 className='font-bold mb-2 text-gray-900'>{selectOneSbj(selectedSubject).title}</h2>
           <p className='text-gray-700 text-sm mr-5'>{selectOneSbj(selectedSubject).description}</p>
-          <h className='text-blue-600 font-bold mt-5'>{`${selectOneSbj(selectedSubject).subject} 탐색하기`}</h>
+          <h4 className='text-blue-600 font-bold mt-5'>{`${selectOneSbj(selectedSubject).subject} 탐색하기`}</h4>
         </div>
         <img className='' src={selectOneSbj(selectedSubject).pic} alt='' />
       </div>

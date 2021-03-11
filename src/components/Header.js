@@ -1,7 +1,7 @@
 import logo from '../img/logo-coral.svg';
 import search from '../img/search.svg';
 import cart from '../img/cart.svg';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 const Header = () => {
   return (

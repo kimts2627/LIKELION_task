@@ -15,7 +15,7 @@ const SectionFour = () => {
       <div className='w-full flex flex-row justify-between'>
         {
           categories.map(item =>
-            <div className='border border-gray-300 w-1/5 h-auto rounded-md cursor-pointer'>
+            <div key={item.title} className='border border-gray-300 w-1/5 h-auto rounded-md cursor-pointer'>
               <img className='w-full h-auto' src={item.pic} alt='' />
               <div className='pl-4 pt-3 font-semibold h-16'>{item.title}</div>
             </div>

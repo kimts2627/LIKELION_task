@@ -2,7 +2,6 @@ import lecture_1 from '../img/lecture_1.jpg';
 import lecture_2 from '../img/lecture-2.jpg';
 import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import arrow from '../img/arrow.png';
 
 const SectionTwo = () => {
 
