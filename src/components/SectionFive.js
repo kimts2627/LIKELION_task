@@ -3,16 +3,16 @@ import YouTube from 'react-youtube';
 
 const SectionFive = () => {
 
+
+  // iframe 사이즈 조절
   const ref = useRef();
   const [videoWidth, handleWidth] = useState(0);
-
   useEffect(() => {
     handleWidth(ref.current.clientWidth /2);
-
-  }, []);
+  });
 
   return (
-    <section className='px-6 flex' ref={ref}>
+    <section className='w-full max-w-screen-2xl px-14 mt-14 flex border border-red-700' ref={ref}>
       <iframe
         width={videoWidth}
         height='315'
