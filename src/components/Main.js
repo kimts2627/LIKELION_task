@@ -7,7 +7,7 @@ import SectionFive from './SectionFive';
 
 const Main = () => {
   return (
-    <main>
+    <main className='flex flex-col items-center'>
       <Billboard />
       <SectionOne />
       <SectionTwo />

@@ -5,7 +5,7 @@ import cart from '../img/cart.svg';
 const Header = () => {
   return (
     <div>
-      <div className='relative bg-white h-20 shadow-xl flex flex-row px-5 items-center z-30'>
+      <div className='relative bg-white h-20 shadow-md flex flex-row px-5 items-center z-30'>
         <img className='w-auto h-10 ' src={logo} alt='' />
         <HeaderSearchBar />
         <HeaderButtons />
@@ -30,10 +30,10 @@ const HeaderSearchBar = () => {
 
 const HeaderButtons = () => {
   return (
-    <div className='flex flex-row'>
+    <div className='flex flex-row text-sm'>
       <img className='w-6 cursor-pointer' src={cart} alt='' />
-      <button className='border boredr-black rounded-md w-24 h-12 ml-6 focus:outline-none'>로그인</button>
-      <button className='bg-black text-white rounded-md w-24 h-12 ml-2 focus:outline-none'>가입하기</button>
+      <button className='border border-black rounded-md w-28 h-10 ml-6 focus:outline-none'>로그인</button>
+      <button className='bg-black text-white rounded-md w-28 h-10 ml-2 focus:outline-none'>가입하기</button>
     </div>
   );
 }
