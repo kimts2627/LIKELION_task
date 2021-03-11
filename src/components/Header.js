@@ -18,12 +18,12 @@ const HeaderSearchBar = () => {
 
   return (
     <div className='flex-1 flex flex-row text-sm'>
-      <nav className='w-24 flex justify-center items-center' >카테고리</nav>
+      <nav className='w-24 flex justify-center items-center hover:text-blue-600 cursor-pointer' >카테고리</nav>
       <div className='border rounded-full border-black flex flex-row flex-1 px-4 h-12 justify-center items-center'>
         <img className='w-4 mr-5' src={search} alt='' />
         <input className='bg-none outline-none h-10 flex-1 text-sm' type='text' placeholder='무엇이든 검색하기'></input>
       </div>
-      <nav className='w-48 flex justify-center items-center font-normal'>Udemy에서 가르치기</nav>
+      <nav className='w-48 flex justify-center items-center font-normal hover:text-blue-600 cursor-pointer'>Udemy에서 가르치기</nav>
     </div>
   );
 }

@@ -69,7 +69,7 @@ const SelectionTab = () => {
           </div>
         )}
       </nav>
-      <div className='h-72 my-5 flex flex-row justify-evenly items-center'>
+      <div className='h-72 my-3 flex flex-row justify-evenly items-center cursor-pointer'>
         <div className='flex flex-col'>
           <h2 className='font-bold mb-2 text-gray-900'>{selectOneSbj(selectedSubject).title}</h2>
           <p className='text-gray-700 text-sm mr-5'>{selectOneSbj(selectedSubject).description}</p>

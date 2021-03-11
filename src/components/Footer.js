@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className='border-t border-gray-300 h-80 pl-6 pt-8 relative mt-10'>
       <article className='flex flex-wrap'>
-        {footerMenu.map(item => <p className='w-60 font-normal text-sm mb-2 cursor-pointer'>{item}</p>)}
+        {footerMenu.map(item => <p className='w-60 font-normal text-sm mb-2 cursor-pointer hover:text-blue-600'>{item}</p>)}
       </article>
       <img className='h-8 mt-14' src={logo} alt='' />
       <div className='border border-black rounded w-52 h-12 absolute top-8 right-8 flex items-center justify-evenly cursor-pointer' onClick={() => handleLanguageModal(!isLanguageModalOn)}>

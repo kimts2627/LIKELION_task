@@ -12,7 +12,7 @@ const SectionFive = () => {
   }, []);
 
   return (
-    <section className='w-full h-auto max-w-screen-2xl px-14 mt-14 flex items-center justify-center border border-red-700' ref={ref}>
+    <section className='w-full h-auto max-w-screen-2xl px-14 mt-14 flex items-center justify-center' ref={ref}>
       <div className='w-1/2 h-60'>
         <iframe
           className='w-full h-full'
