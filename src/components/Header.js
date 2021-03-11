@@ -4,7 +4,7 @@ import cart from '../img/cart.svg';
 
 const Header = () => {
   return (
-    <div className='bg-white h-20 shadow-xl flex flex-row px-5 items-center'>
+    <div className='bg-white h-20 shadow-xl flex flex-row px-5 items-center z-20'>
       <img className='w-auto h-10 ' src={logo} alt='' />
       <HeaderSearchBar />
       <HeaderButtons />
